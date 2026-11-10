@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T06:58:43.339060+00:00",
+  "stage": "Stage 6 complete",
+  "experiment_version": "stage6-baselines-v2",
+  "dataset_version": "stage5-core-v2",
+  "input_files": {
+    "edge_attr.npy": {
+      "bytes": 681496,
+      "sha256": "7c719a26810b99b3cf7968f638723f9a23ef6731f4dcf7dd1a5ee2ae069dfce7"
+    },
+    "edge_index.npy": {
+      "bytes": 2725600,
+      "sha256": "04b7a416ad8b08df465bee477f82f1e7576c9185575f7ae6ed4ac580fc275e26"
+    },
+    "feature_names.json": {
+      "bytes": 677,
+      "sha256": "d2de4cb736099609c8e5f6c4c3a5a2d103320099c4253e84d25358acda4f7245"
+    },
+    "gene_features.tsv.gz": {
+      "bytes": 1221613,
+      "sha256": "e7c7e4c597e216e3e9f631d0ca43effaa8261a14a0f1ce119dac4c114586a0dc"
+    },
+    "gene_ids.txt": {
+      "bytes": 339462,
+      "sha256": "461a5f5ff3fba5a33b11eb0d2e0a4715634f50166331855eea358163700c2716"
+    },
+    "string_physical_edges.tsv.gz": {
+      "bytes": 2423593,
+      "sha256": "9b5414c5ac79a1e4d21bca543bf182da28d6612f70bd07046b01f021d557f287"
+    },
+    "x.npy": {
+      "bytes": 1597088,
+      "sha256": "9c3d2f71439b0f86244a30440c20ea65746e5ace8544da9974d06f2cb8b0b625"
+    },
+    "y.npy": {
+      "bytes": 20090,
+      "sha256": "705e8566965977268e4971e8597c784b81aeb1dec0b81367865eb6bc7fdc069b"
+    }
+  },
+  "config_sha256": "d88f68c5278f523bdf32f01961209f219d820c5e99fb55267e6bb229f41b7093",
+  "evaluation_status": "exploratory correction rerun on previously examined test split",
+  "saved_model_roundtrip_max_error": 0.0,
+  "saved_graph_roundtrip_max_error": 0.0,
+  "metric_policy": "threshold-grouped average precision; fractional top-k ties; midrank percentiles",
+  "learning_regime": "non-negative positive-unlabelled risk",
+  "split_policy": "stable hash, label-stratified; test labels unused until selection frozen",
+  "split_counts": {
+    "train": {
+      "positive": 11,
+      "unlabelled": 11967
+    },
+    "validation": {
+      "positive": 3,
+      "unlabelled": 3989
+    },
+    "test": {
+      "positive": 3,
+      "unlabelled": 3989
+    }
+  },
+  "selected_nnpu": {
+    "class_prior": 0.001,
+    "l2": 0.01,
+    "final_risk": 0.0047639341507567465
+  },
+  "preprocessing_policy": "Stage 5 placeholder values are replaced using observed training-partition medians; scaler statistics are then fitted on the same permitted partition.",
+  "standardized_feature_coefficients": [
+    {
+      "feature": "paad_damaging_snv_prevalence",
+      "standardized_coefficient": 0.7849092149036272
+    },
+    {
+      "feature": "paad_deletion_prevalence",
+      "standardized_coefficient": 0.04982855037270436
+    },
+    {
+      "feature": "patient_atac_mean",
+      "standardized_coefficient": 0.04626605511081679
+    },
+    {
+      "feature": "panc1_vs_hpne_ctcf",
+      "standardized_coefficient": 0.0358490499112591
+    },
+    {
+      "feature": "patient_atac_variability",
+      "standardized_coefficient": 0.028395842489700288
+    },
+    {
+      "feature": "paad_expression_tumor",
+      "standardized_coefficient": 0.025297809696494446
+    },
+    {
+      "feature": "panc1_vs_hpne_h3k4me3",
+      "standardized_coefficient": 0.0122634773814286
+    },
+    {
+      "feature": "panc1_vs_hpne_h3k27ac",
+      "standardized_coefficient": 0.012104356897677878
+    },
+    {
+      "feature": "paad_amplification_prevalence__missing",
+      "standardized_coefficient": 0.011776825871650952
+    },
+    {
+      "feature": "paad_deletion_prevalence__missing",
+      "standardized_coefficient": 0.011776825871650952
+    },
+    {
+      "feature": "panc1_vs_hpne_atac",
+      "standardized_coefficient": 0.0028990076654054225
+    },
+    {
+      "feature": "paad_amplification_prevalence",
+      "standardized_coefficient": -0.0018905623924186878
+    },
+    {
+      "feature": "panc1_vs_hpne_ctcf__missing",
+      "standardized_coefficient": -0.001242873908820445
+    },
+    {
+      "feature": "panc1_vs_hpne_h3k4me3__missing",
+      "standardized_coefficient": -0.001242873908820445
+    },
+    {
+      "feature": "panc1_vs_hpne_h3k27ac__missing",
+      "standardized_coefficient": -0.001242873908820445
+    },
+    {
+      "feature": "panc1_vs_hpne_atac__missing",
+      "standardized_coefficient": 0.0004576395974585084
+    },
+    {
+      "feature": "patient_atac_mean__missing",
+      "standardized_coefficient": -0.00033258002584692385
+    },
+    {
+      "feature": "patient_atac_variability__missing",
+      "standardized_coefficient": -0.00033258002584692385
+    },
+    {
+      "feature": "paad_damaging_snv_prevalence__missing",
+      "standardized_coefficient": 0.0
+    },
+    {
+      "feature": "paad_expression_tumor__missing",
+      "standardized_coefficient": 0.0
+    }
+  ],
+  "nnpu_validation_candidates": [
+    {
+      "class_prior": 0.001,
+      "l2": 0.0001,
+      "risk": 0.0006271468793055701,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8266065012116655,
+        "observed_label_auprc": 0.6671478986204683,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 887.7514704309698,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "class_prior": 0.001,
+      "l2": 0.01,
+      "risk": 0.005655144560089553,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8734854182334754,
+        "observed_label_auprc": 0.6673258624478137,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 887.9882809638907,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "class_prior": 0.003,
+      "l2": 0.0001,
+      "risk": 0.000831136281110531,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8062170970167962,
+        "observed_label_auprc": 0.6670973298880276,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 887.6841803043354,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "class_prior": 0.003,
+      "l2": 0.01,
+      "risk": 0.005394606010054528,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8352135038021226,
+        "observed_label_auprc": 0.6671729957805907,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 887.7848663853728,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "class_prior": 0.01,
+      "l2": 0.0001,
+      "risk": 0.0011193034133245249,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8515083145316287,
+        "observed_label_auprc": 0.5561176691024919,
+        "median_positive_percentile": 0.999498997995992,
+        "auprc_lift_over_random": 740.0072450190493,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "class_prior": 0.01,
+      "l2": 0.01,
+      "risk": 0.006782119037426853,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8446561377120414,
+        "observed_label_auprc": 0.6672037235947011,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 887.825754863349,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    }
+  ],
+  "selected_graph_restart": 0.5,
+  "graph_validation_candidates": [
+    {
+      "restart": 0.3,
+      "iterations": 42,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.9547923456171136,
+        "observed_label_auprc": 0.4304267161410018,
+        "median_positive_percentile": 0.998496993987976,
+        "auprc_lift_over_random": 572.7544836116264,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "restart": 0.5,
+      "iterations": 24,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.9292220272415811,
+        "observed_label_auprc": 0.667843137254902,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 888.6766013071896,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "restart": 0.7,
+      "iterations": 15,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.9202807721233391,
+        "observed_label_auprc": 0.6677115987460814,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 888.501567398119,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    },
+    {
+      "restart": 0.9,
+      "iterations": 9,
+      "metrics": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8926213754491519,
+        "observed_label_auprc": 0.6674430641821947,
+        "median_positive_percentile": 0.999749498997996,
+        "auprc_lift_over_random": 888.1442374051071,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      }
+    }
+  ],
+  "graph_iterations_final": 24,
+  "test_metrics": {
+    "feature_only_nnpu": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9653213002423331,
+      "observed_label_auprc": 0.22464940668824163,
+      "median_positive_percentile": 0.99874749498998,
+      "auprc_lift_over_random": 298.93347716648685,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    },
+    "graph_random_walk": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9658226790340102,
+      "observed_label_auprc": 0.08844256518675124,
+      "median_positive_percentile": 0.9947394789579158,
+      "auprc_lift_over_random": 117.68757340850365,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    }
+  },
+  "isolated_positive_sensitivity": {
+    "gene": "LRP1B",
+    "split": "train",
+    "feature_rank": 24,
+    "graph_rank": 29,
+    "rank_change": 5
+  },
+  "evaluation_warning": "Metrics rank known positives against unlabelled genes, some of which may be undiscovered drivers. They are observed-label retrieval metrics, not clinical sensitivity/specificity.",
+  "graph_evaluation_scope": "Transductive: all graph features/topology available. Validation labels select parameters and enter the final refit; test labels do not enter training. Test has been seen previously.",
+  "output_files": {
+    "feature_scores.npy": {
+      "bytes": 79976,
+      "sha256": "30deaaa31a0e769708f37fd7de343b1179dd7ca85b51814b3af8247811613ffe"
+    },
+    "feature_weights.npy": {
+      "bytes": 208,
+      "sha256": "333cc71c515b4df996e4cf1f7a25f897d64f6cc962a52bc7590aeb3d5dbbe5e8"
+    },
+    "gene_scores.tsv.gz": {
+      "bytes": 543533,
+      "sha256": "39a9b6f23271aee691b5d09d470e2f33575bf89d58d9a2472d3664c0ec494fd1"
+    },
+    "graph_scores.npy": {
+      "bytes": 79976,
+      "sha256": "d28ebf8d224d1526e8298d7d53c7a1e8b88bbd8221c5c688115fb6e9efb4bf3e"
+    },
+    "imputer_medians.npy": {
+      "bytes": 168,
+      "sha256": "b2e5d3c8cfb8bfc8def871958a09d884d80aa404ef1e49e91a14cd0148b8acc1"
+    },
+    "model.npz": {
+      "bytes": 6146,
+      "sha256": "5703857380f6bd99f0f6c15bc73194e19491194724407f5791ee46d08b90ab5f"
+    },
+    "scaler_mean.npy": {
+      "bytes": 208,
+      "sha256": "a58e62c3c672f998a548bfbd933ca10fe19d5d91d1740b4e64149d6011a66bc9"
+    },
+    "scaler_scale.npy": {
+      "bytes": 208,
+      "sha256": "93b1ec3901076c92aa88ee064234e03985761b21cfe82a8e07fec77729e2b7e6"
+    },
+    "split.npy": {
+      "bytes": 20090,
+      "sha256": "cbe7a938d431b26c8b5a2823d6f3d219448934197650f91412657226c2563582"
+    }
+  },
+  "qc_status": "pass",
+  "next_stage": "Stage 7: controlled transfer-learning experiments and negative-transfer tests"
+}

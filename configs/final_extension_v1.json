@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-11-04T16:01:53.165876+00:00",
+  "source_sha256": "512a3fffdb517258492dc48c995600b108d8fbc509bf978d35ab434dbada9549",
+  "groups": {
+    "mutation": [
+      6,
+      16
+    ],
+    "mutation_cnv": [
+      6,
+      7,
+      8,
+      16,
+      17,
+      18
+    ],
+    "mutation_expression": [
+      6,
+      9,
+      16,
+      19
+    ],
+    "full": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "models": [
+    "nnpu",
+    "gradient_boosting",
+    "lightgbm"
+  ],
+  "seeds": [
+    113,
+    227,
+    349,
+    463,
+    587
+  ],
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "selection": "Each model/feature set independently tuned by inner AP; ties choose first candidate. Fixed 600 nnPU epochs; six PU bags.",
+  "nnpu_grid": [
+    {
+      "prior": 0.001,
+      "l2": 0.0001
+    },
+    {
+      "prior": 0.001,
+      "l2": 0.01
+    },
+    {
+      "prior": 0.003,
+      "l2": 0.0001
+    },
+    {
+      "prior": 0.003,
+      "l2": 0.01
+    },
+    {
+      "prior": 0.01,
+      "l2": 0.0001
+    },
+    {
+      "prior": 0.01,
+      "l2": 0.01
+    }
+  ],
+  "tree_grid": [
+    {
+      "level": 0
+    },
+    {
+      "level": 1
+    }
+  ],
+  "lopo": "nnPU full and mutation-only independently tuned on 16 remaining positives and fixed training-unlabelled set. Hold out fixed 10 percent of U as common test background; held positive never included as unlabelled. Compare all 17 held-positive ranks.",
+  "prior_sensitivity": "nnPU full and mutation on first repeat outer folds; fixed priors .0005,.001,.003,.01,.03; L2 tuned within each outer training set. Secondary diagnostic, not model selection.",
+  "stability": "Fit nnPU/GB/LightGBM full and nnPU mutation to same 16-positive deletion training sets; rank original U within fixed heldout U background. Top100 fractional tie weights and pairwise weighted Jaccard. Sensitivity to positive deletion, not independent biological replication.",
+  "lopo_seed": 20261105,
+  "reuse": "Reuse complete checkpoint only when source hash matches plan; no original artifacts overwritten.",
+  "interpretation": "Additional exploratory experiments on consumed data; no new independent test. No label expansion or external outcome tuning.",
+  "input_x_sha256": "9c3d2f71439b0f86244a30440c20ea65746e5ace8544da9974d06f2cb8b0b625",
+  "input_y_sha256": "705e8566965977268e4971e8597c784b81aeb1dec0b81367865eb6bc7fdc069b"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:53:31.869999+00:00",
+  "identity_map": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\processed\\reference\\gencode_v36_gene_identity.csv.gz",
+  "modalities": {
+    "rna_expression": {
+      "representative_file": "002de81c-60f8-4933-a0ea-43701990ac43.rna_seq.augmented_star_gene_counts.tsv",
+      "observed_gene_ids": 60660,
+      "matched_gene_ids": 60660,
+      "coverage_fraction": 1.0,
+      "unmatched_gene_ids": []
+    },
+    "gene_level_cnv": {
+      "representative_file": "TCGA-PAAD.00598fc8-30bc-417d-8984-93ee390e8961.ascat3.gene_level_copy_number.v36.tsv",
+      "observed_gene_ids": 60623,
+      "matched_gene_ids": 60623,
+      "coverage_fraction": 1.0,
+      "unmatched_gene_ids": []
+    }
+  },
+  "qc_status": "pass"
+}

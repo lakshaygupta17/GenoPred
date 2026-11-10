@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-26T17:20:32.108829+00:00",
+  "stage": "Stage 3 complete",
+  "qc_status": "pass",
+  "reference_count": 5,
+  "bigwig_count": 16,
+  "hic_archive_count": 2,
+  "atlas_interval_retention_fraction": 0.9986021127350041,
+  "atlas_signal_mass_retention_fraction": 0.9844171783284928,
+  "gene_identity_count": 60660,
+  "tcga_gene_identity_coverage": {
+    "rna_expression": 1.0,
+    "gene_level_cnv": 1.0
+  },
+  "canonical_complete_tcga_cases": 165,
+  "coordinate_policy": "GSE124229 intervals materialized in GRCh38. GSE149103 immutable hg19 tracks are queried with GRCh38 targets reverse-lifted to hg19; extracted Hi-C interval pairs must be forward-lifted before aggregation. Direct coordinate mixing is forbidden."
+}

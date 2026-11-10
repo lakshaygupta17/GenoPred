@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T06:58:43.340006+00:00",
+  "stage": "Stage 6 complete",
+  "qc_status": "pass",
+  "experiment_version": "stage6-baselines-v2",
+  "test_metrics": {
+    "feature_only_nnpu": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9653213002423331,
+      "observed_label_auprc": 0.22464940668824163,
+      "median_positive_percentile": 0.99874749498998,
+      "auprc_lift_over_random": 298.93347716648685,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    },
+    "graph_random_walk": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9658226790340102,
+      "observed_label_auprc": 0.08844256518675124,
+      "median_positive_percentile": 0.9947394789579158,
+      "auprc_lift_over_random": 117.68757340850365,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    }
+  },
+  "next_stage": "Stage 7: controlled transfer-learning experiments and negative-transfer tests"
+}

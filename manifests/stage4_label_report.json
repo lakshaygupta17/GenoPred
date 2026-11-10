@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:55:09.313103+00:00",
+  "label_rule_version": "stage4-intogen-external-v1",
+  "gene_universe": "GENCODE v36 GRCh38.p13 protein_coding genes",
+  "gene_count": 19962,
+  "label_counts": {
+    "unlabelled": 19945,
+    "positive": 17
+  },
+  "positive_gene_symbols": [
+    "ACVR1B",
+    "ACVR2A",
+    "ARID1A",
+    "ATM",
+    "CDKN2A",
+    "FAT1",
+    "KDM6A",
+    "KMT2C",
+    "KMT2D",
+    "KRAS",
+    "LRP1B",
+    "RBM10",
+    "RNF43",
+    "SMAD4",
+    "SMARCA4",
+    "TGFBR2",
+    "TP53"
+  ],
+  "minimum_independent_external_families": 2,
+  "qualifying_external_families": [
+    "CPTAC",
+    "ICGC_PACA_AU",
+    "ICGC_PACA_CA"
+  ],
+  "paad_evidence_rows": 146,
+  "paad_driver_symbols_in_source": 64,
+  "evidence_mapping_counts": {
+    "unique": 146
+  },
+  "unresolved_evidence_symbols": [],
+  "reliable_negative_policy": {
+    "enabled": false,
+    "reason": "Absence from a driver catalog is not evidence that a gene is a true non-driver. Stage 4 therefore preserves these genes as unlabelled and requires positive-unlabelled learning until an independently curated negative rule is approved."
+  },
+  "downstream_learning_regime": "positive-unlabelled",
+  "tcga_circularity_control": "TCGA_WXS_PAAD evidence is recorded but cannot qualify a positive label because TCGA-PAAD mutation prevalence is a planned feature.",
+  "label_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\processed\\labels\\paad_gene_labels.tsv.gz",
+  "label_file_sha256": "ebc615062a976b5e1b20fec063478ede30a18f7c9859b30502ec4a8872635ef7",
+  "evidence_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\processed\\labels\\paad_label_evidence.tsv.gz",
+  "evidence_file_sha256": "564f970e524ebe53cc77bba971dbb5fb6ae8da16e7860e0a8fc968e6c802e1f9",
+  "qc_status": "pass"
+}

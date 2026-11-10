@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-21T09:51:53.621447+00:00",
+  "scope": "metadata and file inventories only; large assay files not downloaded",
+  "geo": [
+    {
+      "series": "GSE149103",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE149nnn/GSE149103/soft/GSE149103_family.soft.gz",
+      "snapshot_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\raw\\manifests\\source_snapshots\\GSE149103_family.soft.gz",
+      "snapshot_sha256": "61e71ba5ca2c63b6cf50e02af5bf641d181d48edf822d7fc2828c79844186fdf",
+      "sample_count": 66,
+      "file_count": 47
+    },
+    {
+      "series": "GSE124229",
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE124nnn/GSE124229/soft/GSE124229_family.soft.gz",
+      "snapshot_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\raw\\manifests\\source_snapshots\\GSE124229_family.soft.gz",
+      "snapshot_sha256": "0e957c62bcd0f23c7a41b603f2c87f2eb5725733dced6bdd7c33dbdd6e536d7b",
+      "sample_count": 80,
+      "file_count": 82
+    }
+  ],
+  "gdc": {
+    "project": "TCGA-PAAD",
+    "source_url": "https://api.gdc.cancer.gov/files",
+    "snapshot_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\raw\\manifests\\source_snapshots\\TCGA-PAAD_open_files.json",
+    "snapshot_sha256": "b364d868f23a7a4073fe04e76707f9da29baa8597d369c03cd131e73aff0aa9b",
+    "file_count": 4971,
+    "repository_reported_total": 4971
+  },
+  "selection_counts": {
+    "GSE149103": {
+      "core": 18,
+      "not_selected": 19,
+      "validation": 10
+    },
+    "GSE124229": {
+      "core": 1,
+      "not_selected": 1,
+      "validation": 80
+    },
+    "TCGA-PAAD": {
+      "core": 542,
+      "not_selected": 2206,
+      "supporting": 2057,
+      "validation": 166
+    }
+  },
+  "selection_size_bytes": {
+    "GSE149103": {
+      "core": 6045957327,
+      "not_selected": 15197104341,
+      "validation": 2707963680
+    },
+    "GSE124229": {
+      "core": 12266001,
+      "not_selected": 54644510720,
+      "validation": 54644442807
+    },
+    "TCGA-PAAD": {
+      "core": 1400221648,
+      "not_selected": 305248951520,
+      "supporting": 3777321338,
+      "validation": 570290846
+    }
+  }
+}

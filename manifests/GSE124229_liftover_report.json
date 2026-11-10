@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-26T17:20:08.865353+00:00",
+  "source_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\raw\\GSE124229\\GSE124229_Atlas_counts.txt.gz",
+  "output_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\interim\\GSE124229\\GSE124229_Atlas_counts.GRCh38.tsv.gz",
+  "chain_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\raw\\references\\hg19ToHg38.over.chain.gz",
+  "chain_sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+  "coordinate_convention": "0-based half-open; end mapped as end-1 then restored",
+  "input_intervals": 119466,
+  "mapped_intervals": 119299,
+  "interval_retention_fraction": 0.9986021127350041,
+  "input_signal_mass": 892747045,
+  "mapped_signal_mass": 878835527,
+  "signal_mass_retention_fraction": 0.9844171783284928,
+  "rejected_reasons": {
+    "cross_chromosome": 19,
+    "strand_disagreement": 44,
+    "unmapped_or_ambiguous_endpoint": 104
+  },
+  "output_sha256": "6dd5275ecfb81bebcbde79ec5f64c06ad29b8b41e6bbb1c7b614b08b4d1d748f",
+  "qc_status": "pass"
+}

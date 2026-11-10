@@ -1,0 +1,797 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T06:57:53.001862+00:00",
+  "dataset_version": "stage5-core-v2",
+  "gene_count": 19962,
+  "positive_count": 17,
+  "unlabelled_count": 19945,
+  "base_feature_count": 10,
+  "model_feature_count": 20,
+  "feature_names": [
+    "panc1_vs_hpne_atac",
+    "patient_atac_mean",
+    "patient_atac_variability",
+    "panc1_vs_hpne_ctcf",
+    "panc1_vs_hpne_h3k4me3",
+    "panc1_vs_hpne_h3k27ac",
+    "paad_damaging_snv_prevalence",
+    "paad_amplification_prevalence",
+    "paad_deletion_prevalence",
+    "paad_expression_tumor",
+    "panc1_vs_hpne_atac__missing",
+    "patient_atac_mean__missing",
+    "patient_atac_variability__missing",
+    "panc1_vs_hpne_ctcf__missing",
+    "panc1_vs_hpne_h3k4me3__missing",
+    "panc1_vs_hpne_h3k27ac__missing",
+    "paad_damaging_snv_prevalence__missing",
+    "paad_amplification_prevalence__missing",
+    "paad_deletion_prevalence__missing",
+    "paad_expression_tumor__missing"
+  ],
+  "feature_shape": [
+    19962,
+    20
+  ],
+  "label_shape": [
+    19962
+  ],
+  "imputation_medians": {
+    "panc1_vs_hpne_atac": 0.0426320887955387,
+    "patient_atac_mean": 2.583007141291181,
+    "patient_atac_variability": 0.2153004666322893,
+    "panc1_vs_hpne_ctcf": 0.02570501302856132,
+    "panc1_vs_hpne_h3k4me3": 0.1462046529540698,
+    "panc1_vs_hpne_h3k27ac": -0.01996366426543017,
+    "paad_damaging_snv_prevalence": 0.0,
+    "paad_amplification_prevalence": 0.01818181818181818,
+    "paad_deletion_prevalence": 0.10909090909090909,
+    "paad_expression_tumor": 2.886296510696411
+  },
+  "missing_counts": {
+    "panc1_vs_hpne_atac": 202,
+    "patient_atac_mean": 13,
+    "patient_atac_variability": 13,
+    "panc1_vs_hpne_ctcf": 128,
+    "panc1_vs_hpne_h3k4me3": 128,
+    "panc1_vs_hpne_h3k27ac": 128,
+    "paad_damaging_snv_prevalence": 0,
+    "paad_amplification_prevalence": 953,
+    "paad_deletion_prevalence": 953,
+    "paad_expression_tumor": 0
+  },
+  "cohort_cases": 165,
+  "cnv_case_baselines": [
+    {
+      "case_id": "TCGA-2J-AAB1",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AAB4",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AAB6",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AAB9",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABA",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABE",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABF",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABH",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABI",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABO",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-2J-AABP",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-2J-AABR",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABT",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2J-AABV",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2L-AAQA",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-2L-AAQI",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-2L-AAQJ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2L-AAQL",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-2L-AAQM",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9I5",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9I7",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9I9",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IB",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IC",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IH",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IJ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IL",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IN",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IO",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IR",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IS",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IU",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IV",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IX",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9IZ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3A-A9J0",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-3E-AAAY",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-3E-AAAZ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-6879",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-6880",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-7276",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-A44G",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-A44H",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-F2-A7TX",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-F2-A8YN",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-A4P6",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-A5VM",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-A78T",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-A7DR",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPP",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPQ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPS",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPU",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPY",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAPZ",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-FB-AAQ0",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-FB-AAQ1",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAQ2",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAQ3",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-FB-AAQ6",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-H6-8124",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-H6-A45N",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-H8-A6C1",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HV-A5A3",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HV-A5A4",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HV-A5A5",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HV-A5A6",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HV-A7OL",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HV-A7OP",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HV-AA8V",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HV-AA8X",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7289",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HZ-7918",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7919",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7920",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7923",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7924",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7925",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-7926",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8001",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8002",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8003",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8005",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-HZ-8315",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8317",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8636",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HZ-8637",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-8638",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A49H",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A49I",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-HZ-A4BH",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A4BK",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A77O",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A77P",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A77Q",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A8P0",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-HZ-A8P1",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7644",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7645",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7646",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7647",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7649",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7652",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7654",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7885",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7886",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-IB-7887",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-7888",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7889",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7890",
+      "autosomal_modal_baseline": 6.0
+    },
+    {
+      "case_id": "TCGA-IB-7891",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-7893",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-IB-7897",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-8126",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-8127",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-A5SO",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A5SP",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-A5SQ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A5SS",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A5ST",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A6UF",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A6UG",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-A7LX",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-A7M4",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUM",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUN",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUO",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUP",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUQ",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUR",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUS",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUT",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUU",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUV",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-IB-AAUW",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-LB-A7SX",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-LB-A8F3",
+      "autosomal_modal_baseline": 3.0
+    },
+    {
+      "case_id": "TCGA-LB-A9Q5",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-M8-A5N4",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-OE-A75W",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-PZ-A5RE",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-Q3-A5QY",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-Q3-AA2A",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-RB-A7B8",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-RB-AA9M",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-RL-AAAS",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-S4-A8RM",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-S4-A8RO",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-S4-A8RP",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-US-A774",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-US-A776",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-US-A779",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-US-A77E",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-US-A77G",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-US-A77J",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XD-AAUG",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XD-AAUH",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XD-AAUI",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XD-AAUL",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XN-A8T3",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-XN-A8T5",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-YB-A89D",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-YH-A8SY",
+      "autosomal_modal_baseline": 4.0
+    },
+    {
+      "case_id": "TCGA-YY-A8LH",
+      "autosomal_modal_baseline": 2.0
+    },
+    {
+      "case_id": "TCGA-Z5-AAPL",
+      "autosomal_modal_baseline": 2.0
+    }
+  ],
+  "cnv_policy": {
+    "baseline": "per-case mode across observed autosomal protein-coding genes, higher mode on ties",
+    "amplification": "copy number >= twice baseline",
+    "deletion": "copy number < baseline, including zero; this is loss rather than exclusively homozygous deletion",
+    "sex_chromosomes": "unavailable until sex-aware baseline validated; retain missing flag"
+  },
+  "patient_atac_policy": "80 libraries -> 40 within-patient medians -> cohort mean/MAD",
+  "liftover_policy": "unique ordered endpoints; length ratio 0.8-1.25; interior checks every 100 bp",
+  "mutation_denominator_limitation": "The selected MAF cohort supplies an available-case denominator of 165; gene-specific exome callable-base masks are not available and require sensitivity analysis.",
+  "graph": {
+    "mapped_string_proteins": 19182,
+    "source_links_at_threshold": 173038,
+    "undirected_edges": 85171,
+    "directed_edges": 170342,
+    "connected_nodes": 10599,
+    "isolated_nodes": 9363,
+    "isolated_positive_nodes": [
+      "LRP1B"
+    ],
+    "minimum_combined_score": 700
+  },
+  "graph_limitation": "Genes without a qualifying STRING physical edge remain valid feature-only nodes; Stage 6 graph models must add self-loops and report isolated-positive sensitivity.",
+  "graph_edge_index_shape": [
+    2,
+    170342
+  ],
+  "graph_edge_attr_shape": [
+    170342,
+    1
+  ],
+  "deferred_features": {
+    "hic_promoter_local": "Requires a validated .hic extraction route and an acquired independent GSE185069 build declaration.",
+    "hic_promoter_distal": "Requires a validated .hic extraction route and an acquired independent GSE185069 build declaration.",
+    "pancreas_crispr_dependency": "Validation-only feature; excluded from training data to preserve orthogonal validation."
+  },
+  "scaling_policy": "No z-score or supervised feature selection is applied in Stage 5. Stage 6 must fit scalers on training nodes only for inductive evaluation.",
+  "output_files": {
+    "edge_attr.npy": {
+      "bytes": 681496,
+      "sha256": "7c719a26810b99b3cf7968f638723f9a23ef6731f4dcf7dd1a5ee2ae069dfce7"
+    },
+    "edge_index.npy": {
+      "bytes": 2725600,
+      "sha256": "04b7a416ad8b08df465bee477f82f1e7576c9185575f7ae6ed4ac580fc275e26"
+    },
+    "feature_names.json": {
+      "bytes": 677,
+      "sha256": "d2de4cb736099609c8e5f6c4c3a5a2d103320099c4253e84d25358acda4f7245"
+    },
+    "gene_features.tsv.gz": {
+      "bytes": 1221613,
+      "sha256": "e7c7e4c597e216e3e9f631d0ca43effaa8261a14a0f1ce119dac4c114586a0dc"
+    },
+    "gene_ids.txt": {
+      "bytes": 339462,
+      "sha256": "461a5f5ff3fba5a33b11eb0d2e0a4715634f50166331855eea358163700c2716"
+    },
+    "string_physical_edges.tsv.gz": {
+      "bytes": 2423593,
+      "sha256": "9b5414c5ac79a1e4d21bca543bf182da28d6612f70bd07046b01f021d557f287"
+    },
+    "x.npy": {
+      "bytes": 1597088,
+      "sha256": "9c3d2f71439b0f86244a30440c20ea65746e5ace8544da9974d06f2cb8b0b625"
+    },
+    "y.npy": {
+      "bytes": 20090,
+      "sha256": "705e8566965977268e4971e8597c784b81aeb1dec0b81367865eb6bc7fdc069b"
+    }
+  },
+  "qc_status": "pass"
+}

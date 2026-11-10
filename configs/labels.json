@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "label_rule_version": "stage4-intogen-external-v1",
+  "target_disease": "Pancreatic Adenocarcinoma",
+  "target_cancer_code": "PAAD",
+  "gene_universe": "GENCODE v36 GRCh38.p13 protein_coding genes",
+  "positive_rule": {
+    "minimum_independent_external_families": 2,
+    "qualifying_families": ["CPTAC", "ICGC_PACA_AU", "ICGC_PACA_CA"],
+    "excluded_from_qualification": ["TCGA_PAAD", "PCAWG_OVERLAP"],
+    "reason": "TCGA is the target feature cohort; PCAWG pancreatic adenocarcinoma overlaps ICGC donors and is supporting rather than independent evidence."
+  },
+  "cohort_family_map": {
+    "CPTAC_WXS_PAAD_2021": "CPTAC",
+    "ICGC_WXS_PAAD_PACA_AU_2019": "ICGC_PACA_AU",
+    "ICGC_WGS_PAAD_PACA_AU_2019": "ICGC_PACA_AU",
+    "ICGC_WXS_PAAD_PACA_CA_2019": "ICGC_PACA_CA",
+    "ICGC_WGS_PAAD_PACA_CA_2019": "ICGC_PACA_CA",
+    "PCAWG_WGS_PANC_ADENOCA": "PCAWG_OVERLAP",
+    "TCGA_WXS_PAAD": "TCGA_PAAD"
+  },
+  "reliable_negative_rule": {
+    "enabled": false,
+    "reason": "Absence from a driver catalog is not evidence that a gene is a true non-driver. Stage 4 therefore preserves these genes as unlabelled and requires positive-unlabelled learning until an independently curated negative rule is approved."
+  },
+  "sources": {
+    "intogen_release": "2024.09.20",
+    "drivers_url": "https://www.intogen.org/download?file=IntOGen-Drivers-20240920.zip",
+    "drivers_sha256": "854def4465bcd7f90f0f8c7857dee9a4cf9da66a4c477c3fe4abeb510358a53c",
+    "cohorts_url": "https://www.intogen.org/download?file=IntOGen-Cohorts-20240920.zip",
+    "cohorts_sha256": "f2643874217500dfc3a7099547df7d83a17a97afc3daeff7f861b8f722362287",
+    "license": "CC0 1.0 Universal"
+  }
+}

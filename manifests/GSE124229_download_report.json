@@ -1,0 +1,19 @@
+{
+  "source": "GSE124229",
+  "generated_at_utc": "2026-08-21T09:52:10.802927+00:00",
+  "expected_files": 1,
+  "verified_files": 1,
+  "verified_bytes": 12266001,
+  "failures": [],
+  "files": [
+    {
+      "source": "GSE124229",
+      "file_id": "GSE124229",
+      "file_name": "GSE124229_Atlas_counts.txt.gz",
+      "bytes": 12266001,
+      "checksum_algorithm": "sha256",
+      "checksum": "8ab57656155f7951d4aaa7d06a0e42ff03386b9f12856acc99d58eb9b7b836fc",
+      "status": "downloaded_verified"
+    }
+  ]
+}

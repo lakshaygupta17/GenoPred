@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_version": "stage6-baselines-v2",
+  "seed": 20260917,
+  "split": {
+    "positive_counts": {"train": 11, "validation": 3, "test": 3},
+    "unlabelled_fractions": {"train": 0.6, "validation": 0.2, "test": 0.2}
+  },
+  "nnpu": {
+    "class_prior_candidates": [0.001, 0.003, 0.01],
+    "l2_candidates": [0.0001, 0.01],
+    "learning_rate": 0.03,
+    "epochs": 600
+  },
+  "graph": {
+    "method": "weighted random walk with restart over STRING physical links",
+    "restart_candidates": [0.3, 0.5, 0.7, 0.9],
+    "iterations": 100,
+    "tolerance": 1e-10,
+    "self_loop_weight": 1.0
+  },
+  "evaluation": {
+    "selection_metric": "observed_label_auprc",
+    "top_k": [100, 500]
+  }
+}

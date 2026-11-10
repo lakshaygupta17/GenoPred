@@ -1,0 +1,172 @@
+{
+  "source": "GSE149103",
+  "generated_at_utc": "2026-08-21T09:59:24.734380+00:00",
+  "expected_files": 18,
+  "verified_files": 18,
+  "verified_bytes": 6045957327,
+  "failures": [],
+  "files": [
+    {
+      "source": "GSE149103",
+      "file_id": "GSE149103",
+      "file_name": "GSE149103_HPNE.hic.tar.gz",
+      "bytes": 887928476,
+      "checksum_algorithm": "sha256",
+      "checksum": "954ada86ec0d32f023bee548c2a3f99324f28cc91dd4ea36e37ef6ce4613f66f",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSE149103",
+      "file_name": "GSE149103_PANC-1.hic.tar.gz",
+      "bytes": 1089347086,
+      "checksum_algorithm": "sha256",
+      "checksum": "9f1d1fdcc44390c9a14de933431af78c610cd22012e2eac77607b7e193425fe8",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490492",
+      "file_name": "GSM4490492_HPNE_ATAC-1.bw",
+      "bytes": 161734826,
+      "checksum_algorithm": "sha256",
+      "checksum": "66ba8bebfe521f00cfdbd0806091384744bcfa8dcde33adbfd488ce4ba6c9379",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490493",
+      "file_name": "GSM4490493_HPNE_ATAC-2.bw",
+      "bytes": 171153327,
+      "checksum_algorithm": "sha256",
+      "checksum": "5be9e588e135dadcc65ae11c9c1b0db997b1acd5a961e29de7b3bf172f66ece4",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490494",
+      "file_name": "GSM4490494_HPNE_1_H3K4me3.bw",
+      "bytes": 259314678,
+      "checksum_algorithm": "sha256",
+      "checksum": "f105d104d299c6696d9ce3945d2f1f75f275ba14c53be7d77af855049a603e92",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490495",
+      "file_name": "GSM4490495_HPNE_2_H3K4me3.bw",
+      "bytes": 274929801,
+      "checksum_algorithm": "sha256",
+      "checksum": "2d7e54ba130eac27480e18cd2e09a4271fd8e0f6d4dd54d0958974be5857fcf7",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490496",
+      "file_name": "GSM4490496_HPNE_1_H3K27ac.bw",
+      "bytes": 256135280,
+      "checksum_algorithm": "sha256",
+      "checksum": "339889982009b4b6beb3009be0c2367c310aed68317806c545ccfd2fcbb0a9e0",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490497",
+      "file_name": "GSM4490497_HPNE_2_H3K27ac.bw",
+      "bytes": 256743017,
+      "checksum_algorithm": "sha256",
+      "checksum": "4c9aee770900424f1b04f9ca60b569a1dda1ef30e56c55d2f67eec222bd61a98",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490504",
+      "file_name": "GSM4490504_HPNE_1_CTCF.bw",
+      "bytes": 255791393,
+      "checksum_algorithm": "sha256",
+      "checksum": "959c2b5207bd65d76b3fb1dc87c3851423c2db8157ae2f214d2750207017446c",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490505",
+      "file_name": "GSM4490505_HPNE_2_CTCF.bw",
+      "bytes": 255906355,
+      "checksum_algorithm": "sha256",
+      "checksum": "045b4166331cd7d5ad1f6efb60ded75efae1915a962d9e88b81e8ff25341b1cf",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490514",
+      "file_name": "GSM4490514_PANC-1_ATAC-1.bw",
+      "bytes": 287383217,
+      "checksum_algorithm": "sha256",
+      "checksum": "0fb0d0e315ccfae89b84ddffd8ca0dbd47fa0bc37326f515f0835e7eaaf20608",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490515",
+      "file_name": "GSM4490515_PANC-1_ATAC-2.bw",
+      "bytes": 274900922,
+      "checksum_algorithm": "sha256",
+      "checksum": "46a592b56a4d21c95d68bc9746a4693d8e6f42d21e7deb6bc56222a72676e7c7",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490516",
+      "file_name": "GSM4490516_PANC-1_1_H3K4me3.bw",
+      "bytes": 273500937,
+      "checksum_algorithm": "sha256",
+      "checksum": "43fc2f81dfcf6af20a008434dda0cc897c7fb1c261861113f8629e9b49d33336",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490517",
+      "file_name": "GSM4490517_PANC-1_2_H3K4me3.bw",
+      "bytes": 265451428,
+      "checksum_algorithm": "sha256",
+      "checksum": "421bb7306df0ca4c0c32b0dec04c318f2ea3f9fd7a3db91475e3219745157890",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490518",
+      "file_name": "GSM4490518_PANC-1_1_H3K27ac.bw",
+      "bytes": 274456598,
+      "checksum_algorithm": "sha256",
+      "checksum": "11068253ec05da935c706c53fc8e1303cc0bb670160a71beddd8377c070aed2e",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490519",
+      "file_name": "GSM4490519_PANC-1_2_H3K27ac.bw",
+      "bytes": 260912803,
+      "checksum_algorithm": "sha256",
+      "checksum": "b47e40d246066b342da148b74c3b69ad78dc2d0505f9a46eb9ff50b00f0bc682",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490526",
+      "file_name": "GSM4490526_PANC-1_1_CTCF.bw",
+      "bytes": 259898615,
+      "checksum_algorithm": "sha256",
+      "checksum": "0d1cfc83765788184266708b0bba4b3adabd80f3e67011fe20a41404936aae8e",
+      "status": "downloaded_verified"
+    },
+    {
+      "source": "GSE149103",
+      "file_id": "GSM4490527",
+      "file_name": "GSM4490527_PANC-1_2_CTCF.bw",
+      "bytes": 280468568,
+      "checksum_algorithm": "sha256",
+      "checksum": "d6a8055856ea1ce31f95e145134570ecb3cda14bfc80371f266f1e88479f5d50",
+      "status": "downloaded_verified"
+    }
+  ]
+}

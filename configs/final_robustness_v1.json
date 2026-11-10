@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-11-04T15:38:22.436730+00:00",
+  "seeds": [
+    113,
+    227,
+    349,
+    463,
+    587
+  ],
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "models": [
+    "nnpu",
+    "decision_tree",
+    "gradient_boosting",
+    "lightgbm"
+  ],
+  "selection": "Mean inner-fold observed-label AP. First candidate wins exact ties. No outer labels/features enter fitting or preprocessing.",
+  "grids": {
+    "nnpu": [
+      {
+        "prior": 0.001,
+        "l2": 0.0001
+      },
+      {
+        "prior": 0.001,
+        "l2": 0.01
+      },
+      {
+        "prior": 0.003,
+        "l2": 0.0001
+      },
+      {
+        "prior": 0.003,
+        "l2": 0.01
+      },
+      {
+        "prior": 0.01,
+        "l2": 0.0001
+      },
+      {
+        "prior": 0.01,
+        "l2": 0.01
+      }
+    ],
+    "decision_tree": [
+      {
+        "level": 0
+      },
+      {
+        "level": 1
+      }
+    ],
+    "gradient_boosting": [
+      {
+        "level": 0
+      },
+      {
+        "level": 1
+      }
+    ],
+    "lightgbm": [
+      {
+        "level": 0
+      },
+      {
+        "level": 1
+      }
+    ]
+  },
+  "PU_bags": 6,
+  "unlabelled_per_positive": 10,
+  "nnpu_epochs": 600,
+  "ablation_models": [
+    "nnpu",
+    "gradient_boosting"
+  ],
+  "ablations": [
+    "no_mutation",
+    "expression_only",
+    "missing_flags_only"
+  ],
+  "ablation_rule": "Reuse full-model inner-selected settings; refit on outer training genes only. Diagnostic, not separately optimized.",
+  "negative_control": "Shuffle outer-training labels for nnpu and gradient boosting, retaining selected settings.",
+  "limitation": "Retrospective robustness study after prior model screening. Not a fresh independent test. Repeats share genes; fold intervals are descriptive, not independent confidence intervals. Unlabelled is not negative.",
+  "source_sha256": "69798255e4ef5621d380fa2c266fdb8a7980800c7d0a12dbe5ea3cb5b7c3a94c",
+  "input_files": {
+    "edge_attr.npy": {
+      "bytes": 681496,
+      "sha256": "7c719a26810b99b3cf7968f638723f9a23ef6731f4dcf7dd1a5ee2ae069dfce7"
+    },
+    "edge_index.npy": {
+      "bytes": 2725600,
+      "sha256": "04b7a416ad8b08df465bee477f82f1e7576c9185575f7ae6ed4ac580fc275e26"
+    },
+    "feature_names.json": {
+      "bytes": 677,
+      "sha256": "d2de4cb736099609c8e5f6c4c3a5a2d103320099c4253e84d25358acda4f7245"
+    },
+    "gene_features.tsv.gz": {
+      "bytes": 1221613,
+      "sha256": "e7c7e4c597e216e3e9f631d0ca43effaa8261a14a0f1ce119dac4c114586a0dc"
+    },
+    "gene_ids.txt": {
+      "bytes": 339462,
+      "sha256": "461a5f5ff3fba5a33b11eb0d2e0a4715634f50166331855eea358163700c2716"
+    },
+    "string_physical_edges.tsv.gz": {
+      "bytes": 2423593,
+      "sha256": "9b5414c5ac79a1e4d21bca543bf182da28d6612f70bd07046b01f021d557f287"
+    },
+    "x.npy": {
+      "bytes": 1597088,
+      "sha256": "9c3d2f71439b0f86244a30440c20ea65746e5ace8544da9974d06f2cb8b0b625"
+    },
+    "y.npy": {
+      "bytes": 20090,
+      "sha256": "705e8566965977268e4971e8597c784b81aeb1dec0b81367865eb6bc7fdc069b"
+    }
+  }
+}

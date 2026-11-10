@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-26T17:19:55.132198+00:00",
+  "bigwigs": [
+    {
+      "filename": "GSM4490492_HPNE_ATAC-1.bw",
+      "chromosome_count": 24,
+      "chromosome_signature": "b6c44da575924402",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490493_HPNE_ATAC-2.bw",
+      "chromosome_count": 24,
+      "chromosome_signature": "b6c44da575924402",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490494_HPNE_1_H3K4me3.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490495_HPNE_2_H3K4me3.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490496_HPNE_1_H3K27ac.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490497_HPNE_2_H3K27ac.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490504_HPNE_1_CTCF.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490505_HPNE_2_CTCF.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490514_PANC-1_ATAC-1.bw",
+      "chromosome_count": 23,
+      "chromosome_signature": "4f5ecb5bff9b15e7",
+      "chr1_size": 249250621,
+      "chrM_size": 0,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490515_PANC-1_ATAC-2.bw",
+      "chromosome_count": 23,
+      "chromosome_signature": "4f5ecb5bff9b15e7",
+      "chr1_size": 249250621,
+      "chrM_size": 0,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490516_PANC-1_1_H3K4me3.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490517_PANC-1_2_H3K4me3.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490518_PANC-1_1_H3K27ac.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490519_PANC-1_2_H3K27ac.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490526_PANC-1_1_CTCF.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    },
+    {
+      "filename": "GSM4490527_PANC-1_2_CTCF.bw",
+      "chromosome_count": 25,
+      "chromosome_signature": "575c780cc51a7df5",
+      "chr1_size": 249250621,
+      "chrM_size": 16571,
+      "build_inference": "hg19"
+    }
+  ],
+  "chromosome_size_conflicts": [],
+  "hic_archives": [
+    {
+      "filename": "GSE149103_HPNE.hic.tar.gz",
+      "member_count": 48,
+      "uncompressed_bytes": 904357776,
+      "members": [
+        {
+          "name": "./HPNE/._HPNE.chr18.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr18.hic",
+          "bytes": 19260577
+        },
+        {
+          "name": "./HPNE/._HPNE.chr19.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr19.hic",
+          "bytes": 11725001
+        },
+        {
+          "name": "./HPNE/._HPNE.chr21.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr21.hic",
+          "bytes": 6812189
+        },
+        {
+          "name": "./HPNE/._HPNE.chr20.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr20.hic",
+          "bytes": 16683862
+        },
+        {
+          "name": "./HPNE/._HPNE.chrX.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chrX.hic",
+          "bytes": 44379632
+        },
+        {
+          "name": "./HPNE/._HPNE.chr9.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr9.hic",
+          "bytes": 25766836
+        },
+        {
+          "name": "./HPNE/._HPNE.chr22.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr22.hic",
+          "bytes": 6164749
+        },
+        {
+          "name": "./HPNE/._HPNE.chr8.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr8.hic",
+          "bytes": 43618585
+        },
+        {
+          "name": "./HPNE/._HPNE.chrY.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chrY.hic",
+          "bytes": 423
+        },
+        {
+          "name": "./HPNE/._HPNE.chr5.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr5.hic",
+          "bytes": 62798367
+        },
+        {
+          "name": "./HPNE/._HPNE.chr12.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr12.hic",
+          "bytes": 40777333
+        },
+        {
+          "name": "./HPNE/._HPNE.chr13.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr13.hic",
+          "bytes": 26642653
+        },
+        {
+          "name": "./HPNE/._HPNE.chr4.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr4.hic",
+          "bytes": 56262804
+        },
+        {
+          "name": "./HPNE/._HPNE.chr6.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr6.hic",
+          "bytes": 65728434
+        },
+        {
+          "name": "./HPNE/._HPNE.chr11.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr11.hic",
+          "bytes": 45557749
+        },
+        {
+          "name": "./HPNE/._HPNE.chr10.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./HPNE/HPNE.chr10.hic",
+          "bytes": 41340793
+        },
+        {
+          "name": "./HPNE/._HPNE.chr7.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr7.hic",
+          "bytes": 55977047
+        },
+        {
+          "name": "./HPNE/._HPNE.chr3.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr3.hic",
+          "bytes": 74001455
+        },
+        {
+          "name": "./HPNE/._HPNE.chr14.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr14.hic",
+          "bytes": 22740834
+        },
+        {
+          "name": "./HPNE/._HPNE.chr15.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr15.hic",
+          "bytes": 23671714
+        },
+        {
+          "name": "./HPNE/._HPNE.chr2.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr2.hic",
+          "bytes": 95360677
+        },
+        {
+          "name": "./HPNE/._HPNE.chr17.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr17.hic",
+          "bytes": 18520047
+        },
+        {
+          "name": "./HPNE/._HPNE.chr16.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr16.hic",
+          "bytes": 18929917
+        },
+        {
+          "name": "./HPNE/._HPNE.chr1.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./HPNE/HPNE.chr1.hic",
+          "bytes": 81631870
+        }
+      ]
+    },
+    {
+      "filename": "GSE149103_PANC-1.hic.tar.gz",
+      "member_count": 48,
+      "uncompressed_bytes": 1106618845,
+      "members": [
+        {
+          "name": "./PANC-1/._PANC-1.chr13.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr13.hic",
+          "bytes": 29799241
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr2.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr2.hic",
+          "bytes": 119642124
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr3.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr3.hic",
+          "bytes": 88193654
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr12.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr12.hic",
+          "bytes": 49070002
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr10.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr10.hic",
+          "bytes": 50102394
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr1.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr1.hic",
+          "bytes": 94946716
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr11.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr11.hic",
+          "bytes": 60686589
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr15.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr15.hic",
+          "bytes": 26205141
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr4.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr4.hic",
+          "bytes": 74141869
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr5.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr5.hic",
+          "bytes": 68490699
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr14.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr14.hic",
+          "bytes": 34425430
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr16.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr16.hic",
+          "bytes": 20460424
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr7.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr7.hic",
+          "bytes": 75525624
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr6.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr6.hic",
+          "bytes": 82371962
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr17.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr17.hic",
+          "bytes": 22847511
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr19.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr19.hic",
+          "bytes": 13782248
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chrY.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chrY.hic",
+          "bytes": 423
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr8.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr8.hic",
+          "bytes": 52245545
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr9.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr9.hic",
+          "bytes": 32011939
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chrX.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chrX.hic",
+          "bytes": 49563730
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr18.hic",
+          "bytes": 272
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr18.hic",
+          "bytes": 25062182
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr20.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr20.hic",
+          "bytes": 20270838
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr21.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr21.hic",
+          "bytes": 9151537
+        },
+        {
+          "name": "./PANC-1/._PANC-1.chr22.hic",
+          "bytes": 172
+        },
+        {
+          "name": "./PANC-1/PANC-1.chr22.hic",
+          "bytes": 7615995
+        }
+      ]
+    }
+  ],
+  "harmonization_policy": "Keep signal tracks immutable in hg19. Lift GRCh38 target intervals to hg19 before querying bigWigs; lift extracted Hi-C interval pairs to GRCh38 before aggregation."
+}

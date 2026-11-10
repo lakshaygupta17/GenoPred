@@ -1,0 +1,20 @@
+{
+  "version": "stage6-pu-trees-v1",
+  "seeds": [
+    41,
+    137,
+    907
+  ],
+  "depths": [
+    2,
+    3
+  ],
+  "unlabelled_per_positive": [
+    5,
+    20
+  ],
+  "bags": 40,
+  "forest_trees_per_bag": 10,
+  "min_samples_leaf": 2,
+  "selection": "mean validation observed-label average precision across all seeds"
+}

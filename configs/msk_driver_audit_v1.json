@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-04T15:27:27.177784+00:00",
+  "purpose": "Evidence eligibility audit; no model-score comparison in this audit",
+  "primary_rule": "Author-supplied Table 2 sequence mutations in at least 3 distinct patients, within IMPACT341 consistently assayed panel; uniquely mapped to frozen gene universe; exclude all 17 existing positives",
+  "sequence_classes": [
+    "Missense_Mutation",
+    "Nonsense_Mutation",
+    "Frame_Shift_Del",
+    "Frame_Shift_Ins",
+    "Splice_Site",
+    "In_Frame_Del",
+    "In_Frame_Ins",
+    "Translation_Start_Site",
+    "Nonstop_Mutation"
+  ],
+  "secondary": "All author-supplied alteration types and one-patient sequence evidence, reported separately; no merging mouse and human labels",
+  "threshold_rationale": "Three-patient recurrence follows the study gene-level enrichment eligibility threshold; not optimized against model performance",
+  "independence": "MSK collection is institutionally distinct from consumed TCGA/CPTAC/ICGC cohorts, but cross-study donor identity is not established. Knowledge-base ascertainment is not biologically independent. Genes were previously present as unlabelled training data; this is not an unseen-gene benchmark.",
+  "model_policy": "No models retrained, no scores evaluated, no training labels changed; freeze a separate evaluation protocol after eligibility and provenance review",
+  "mouse_status": "Publisher supplements HTTP403; PMC served verification HTML; Europe PMC supplementary API reports unavailable. No validated mouse gene table or orthology mapping obtained."
+}

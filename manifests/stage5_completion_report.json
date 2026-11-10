@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T06:57:53.068835+00:00",
+  "stage": "Stage 5 complete",
+  "qc_status": "pass",
+  "dataset_version": "stage5-core-v2",
+  "gene_count": 19962,
+  "base_feature_count": 10,
+  "model_feature_count": 20,
+  "graph_directed_edges": 170342,
+  "graph_source": "STRING human physical links v12.0",
+  "deferred_feature_count": 3,
+  "next_stage": "Stage 6: leakage-safe non-graph and graph baselines"
+}

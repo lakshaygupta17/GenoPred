@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:55:08.896625+00:00",
+  "source": "IntOGen",
+  "release": "2024.09.20",
+  "license": "CC0 1.0 Universal",
+  "files": [
+    {
+      "filename": "IntOGen-Drivers-20240920.zip",
+      "url": "https://www.intogen.org/download?file=IntOGen-Drivers-20240920.zip",
+      "bytes": 964758,
+      "sha256": "854def4465bcd7f90f0f8c7857dee9a4cf9da66a4c477c3fe4abeb510358a53c",
+      "members": [
+        "2024-06-18_IntOGen-Drivers/LICENSE.txt",
+        "2024-06-18_IntOGen-Drivers/README.txt",
+        "2024-06-18_IntOGen-Drivers/Compendium_Cancer_Genes.tsv",
+        "2024-06-18_IntOGen-Drivers/Unfiltered_drivers.tsv"
+      ]
+    },
+    {
+      "filename": "IntOGen-Cohorts-20240920.zip",
+      "url": "https://www.intogen.org/download?file=IntOGen-Cohorts-20240920.zip",
+      "bytes": 13918,
+      "sha256": "f2643874217500dfc3a7099547df7d83a17a97afc3daeff7f861b8f722362287",
+      "members": [
+        "2024-06-18_IntOGen-Cohorts/README.txt",
+        "2024-06-18_IntOGen-Cohorts/LICENSE.txt",
+        "2024-06-18_IntOGen-Cohorts/cohorts.tsv"
+      ]
+    }
+  ],
+  "qc_status": "pass"
+}

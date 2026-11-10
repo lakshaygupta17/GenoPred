@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "target_genome_build": "GRCh38",
+  "sources": [
+    {
+      "source_id": "GSE149103",
+      "name": "Integrative Hi-C maps of pancreatic cancer",
+      "repository": "NCBI GEO/SRA",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149103",
+      "access": "open",
+      "genome_build": "hg19",
+      "modalities": ["ATAC-seq", "CTCF ChIP-seq", "histone ChIP-seq", "Hi-C", "RNA-seq"],
+      "status": "downloaded_core",
+      "role": "Primary coherent cell-line epigenome: PANC-1, Capan-1 and HPNE",
+      "notes": "Processed tracks require hg19-to-GRCh38 harmonization before feature extraction."
+    },
+    {
+      "source_id": "GSE124229",
+      "name": "PDAC patient chromatin accessibility",
+      "repository": "NCBI GEO/dbGaP",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124229",
+      "access": "mixed",
+      "genome_build": "hg19",
+      "modalities": ["ATAC-seq", "clinical recurrence"],
+      "status": "downloaded_core",
+      "role": "Patient-derived ATAC feature and external robustness analysis",
+      "notes": "Processed bigWigs are public; raw reads are controlled."
+    },
+    {
+      "source_id": "TCGA-PAAD",
+      "name": "The Cancer Genome Atlas pancreatic adenocarcinoma",
+      "repository": "NCI Genomic Data Commons",
+      "url": "https://portal.gdc.cancer.gov/projects/TCGA-PAAD",
+      "access": "mixed",
+      "genome_build": "GRCh38",
+      "modalities": ["somatic mutation", "copy number", "RNA-seq", "methylation", "clinical"],
+      "status": "downloaded_core",
+      "role": "Primary patient-cohort genomic features",
+      "notes": "Use harmonized open files where possible; retain amplification and deletion separately."
+    },
+    {
+      "source_id": "ICGC-ARGO-PANCREAS",
+      "name": "APGI-AU and PACA-CA pancreatic cancer cohorts",
+      "repository": "ICGC ARGO",
+      "url": "https://docs.icgc-argo.org/docs/release-notes/data-releases",
+      "access": "mixed",
+      "genome_build": "GRCh38",
+      "modalities": ["WGS", "WXS", "somatic mutation", "RNA-seq", "clinical"],
+      "status": "planned",
+      "role": "Independent genomic validation and label support",
+      "notes": "Open variant calls are available for subsets; raw and clinical access varies. This cohort contributes to Stage 4 through IntOGen and is not untouched validation for label version stage4-intogen-external-v1."
+    },
+    {
+      "source_id": "CPTAC-PDAC",
+      "name": "CPTAC proteogenomic characterization of PDAC",
+      "repository": "NCI GDC/PDC",
+      "url": "https://gdc.cancer.gov/about-data/publications/CPTAC-3_2021_1",
+      "access": "mixed",
+      "genome_build": "GRCh38",
+      "modalities": ["WGS", "WXS", "RNA-seq", "methylation", "proteomics", "phosphoproteomics"],
+      "status": "planned",
+      "role": "Independent molecular and functional validation",
+      "notes": "Processed data are partly open; raw sequencing may be controlled. CPTAC mutation evidence contributes to Stage 4 through IntOGen, so later use must be orthogonal or explicitly non-independent."
+    },
+    {
+      "source_id": "GSE185069",
+      "name": "Structural variation and 3D organization in pancreatic cancer",
+      "repository": "NCBI GEO/SRA",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185069",
+      "access": "open",
+      "genome_build": "unknown",
+      "modalities": ["Hi-C", "long-read sequencing", "RNA-seq"],
+      "status": "planned",
+      "role": "Independent validation of PANC-1 Hi-C features",
+      "notes": "Confirm the processed-data genome build before use."
+    },
+    {
+      "source_id": "DEPMAP-PANCREAS",
+      "name": "Cancer Dependency Map pancreatic lineage",
+      "repository": "Broad DepMap",
+      "url": "https://depmap.org/portal/context_explorer/?context=PANCREAS",
+      "access": "open",
+      "genome_build": "not_applicable",
+      "modalities": ["CRISPR gene effect", "expression", "mutation", "copy number", "drug sensitivity"],
+      "status": "planned",
+      "role": "Orthogonal functional validation, not automatic driver labels",
+      "notes": "Dependency and driver status are distinct biological tasks."
+    },
+    {
+      "source_id": "STRING-V12-PHYSICAL",
+      "name": "STRING v12.0 human physical association network",
+      "repository": "STRING",
+      "url": "https://string-db.org/cgi/download",
+      "access": "open",
+      "genome_build": "not_applicable",
+      "modalities": ["protein physical association network"],
+      "status": "verified",
+      "role": "Stage 5 gene-graph topology",
+      "notes": "CC BY 4.0; human physical links with combined score >=700, mapped through unique preferred gene symbols."
+    },
+    {
+      "source_id": "INTOGEN-PAAD",
+      "name": "IntOGen pancreatic adenocarcinoma driver catalog",
+      "repository": "IntOGen",
+      "url": "https://www.intogen.org/download",
+      "access": "open",
+      "genome_build": "not_applicable",
+      "modalities": ["tumor-specific computational driver evidence"],
+      "status": "verified",
+      "role": "Primary reproducible Stage 4 positive-label evidence",
+      "notes": "Release 2024.09.20 under CC0. TCGA evidence is recorded but excluded from label qualification; external cohort families must replicate."
+    },
+    {
+      "source_id": "ONCOKB-PAAD",
+      "name": "OncoKB tumor-specific pancreatic annotations",
+      "repository": "OncoKB",
+      "url": "https://www.oncokb.org/",
+      "access": "mixed",
+      "genome_build": "not_applicable",
+      "modalities": ["curated variant interpretation", "tumor-specific evidence"],
+      "status": "planned",
+      "role": "One component of positive-label curation",
+      "notes": "Do not use the full pan-cancer gene list as PAAD labels. Respect API and license terms."
+    }
+  ]
+}

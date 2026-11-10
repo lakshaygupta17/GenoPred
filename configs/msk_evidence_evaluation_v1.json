@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-11-04T15:30:11.426661+00:00",
+  "audit_sha256": "03c977508b637e2de8d378c8eef6c88378ee2ca58e9598c26539c1e590ac11d3",
+  "predictions_sha256": "90e95ca9f5cd2d7b7c954677a689657b205de316f0dd22c8aa298b44f3040ad2",
+  "models": [
+    "reference_nnpu",
+    "pu_decision_tree",
+    "pu_gradient_boosting",
+    "pu_lightgbm",
+    "mutation_prevalence_control"
+  ],
+  "primary": "Observed-label average precision within uniquely mapped IMPACT341 genes excluding original 17 positives. Evidence positive = author table sequence alteration in at least 3 distinct patients. Others remain unlabelled.",
+  "secondary": "Fractional tie-adjusted recall at top 20,50,100; average rank enrichment; no tuning",
+  "permutations": 2000,
+  "seed": 20261104,
+  "multiplicity": "Holm for four one-sided mean-rank permutation tests; mutation control descriptive",
+  "interpretation": "Provisional external-evidence consistency. Not a certified independent gold standard, patient diagnostic accuracy, or unseen-gene generalization test. These outcomes are consumed after this run."
+}

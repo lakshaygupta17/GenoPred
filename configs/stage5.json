@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "dataset_version": "stage5-core-v2",
+  "gene_universe": "Stage 4 GENCODE v36 protein_coding label table",
+  "cohort": "165 complete-modality primary-tumour TCGA-PAAD cases",
+  "promoter_window_bp_each_side": 2000,
+  "patient_atac_trim_fraction": 0.10,
+  "cnv_thresholds": {
+    "baseline": "per-case mode across observed autosomal protein-coding genes, higher mode on ties",
+    "amplification": "copy number >= twice baseline",
+    "deletion": "copy number < baseline, including zero; this is loss rather than exclusively homozygous deletion",
+    "sex_chromosomes": "unavailable until sex-aware baseline validated; retain missing flag"
+  },
+  "damaging_variant_classifications": [
+    "Frame_Shift_Del",
+    "Frame_Shift_Ins",
+    "In_Frame_Del",
+    "In_Frame_Ins",
+    "Missense_Mutation",
+    "Nonsense_Mutation",
+    "Nonstop_Mutation",
+    "Splice_Site",
+    "Translation_Start_Site"
+  ],
+  "graph": {
+    "source": "STRING human physical links",
+    "version": "12.0",
+    "minimum_combined_score": 700,
+    "license": "CC BY 4.0",
+    "links_url": "https://stringdb-downloads.org/download/protein.physical.links.v12.0/9606.protein.physical.links.v12.0.txt.gz",
+    "links_sha256": "1ca87209a93cf7685e9c2997fbcfbfc69fedc6a803ccc1df917318a651df0823",
+    "info_url": "https://stringdb-downloads.org/download/protein.info.v12.0/9606.protein.info.v12.0.txt.gz",
+    "info_sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c"
+  },
+  "deferred_features": {
+    "hic_promoter_local": "Requires a validated .hic extraction route and an acquired independent GSE185069 build declaration.",
+    "hic_promoter_distal": "Requires a validated .hic extraction route and an acquired independent GSE185069 build declaration.",
+    "pancreas_crispr_dependency": "Validation-only feature; excluded from training data to preserve orthogonal validation."
+  }
+}

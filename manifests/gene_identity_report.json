@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:53:31.325406+00:00",
+  "gencode_release": 36,
+  "assembly": "GRCh38.p13",
+  "gene_count": 60660,
+  "protein_coding_gene_count": 19962,
+  "genes_with_hgnc_id": 39014,
+  "duplicate_unversioned_ensembl_ids": 0,
+  "pseudoautosomal_base_id_collision_groups": 44,
+  "duplicate_gene_symbols": 110,
+  "collision_policy": "Versionless Ensembl gene ID is canonical, retaining GENCODE's _PAR_Y suffix. Pseudoautosomal chrX/chrY records and duplicate or reused symbols are retained and never collapsed automatically.",
+  "output_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\data\\processed\\reference\\gencode_v36_gene_identity.csv.gz",
+  "output_sha256": "e2907daaea2c7f4871975c1af0752a9d927dbc889441799ef60e9ebcfdcca9cd",
+  "qc_status": "pass"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-26T17:20:32.089645+00:00",
+  "total_cases": 185,
+  "primary_tumour_rna_cases": 178,
+  "cnv_cases": 179,
+  "mutation_cases": 178,
+  "complete_three_modality_cases": 165,
+  "duplicate_primary_tumour_rna_cases": 0,
+  "sample_selection_policy": "Primary Tumor RNA only; normal and metastatic RNA excluded from the canonical model cohort. CNV and MAF require exactly one selected core file per case.",
+  "output_file": "C:\\Users\\laksh\\Desktop\\PythonProjects\\GenoPred V2\\manifests\\TCGA-PAAD_canonical_cohort.csv",
+  "output_sha256": "db3ce0c2018edcf1b7daea789827809b5684b518c34749fa094f45336a02a409",
+  "qc_status": "pass"
+}

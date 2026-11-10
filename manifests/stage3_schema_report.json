@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-26T14:06:34.262063+00:00",
+  "stage": "Stage 3 - schema and sample QC",
+  "files_inspected": 561,
+  "samples_or_file_associations": 999,
+  "tcga_unique_cases": 185,
+  "tcga_unique_samples": 375,
+  "tcga_sample_type_associations": {
+    "Blood Derived Normal": 297,
+    "Metastatic": 2,
+    "Primary Tumor": 536,
+    "Solid Tissue Normal": 66
+  },
+  "tcga_cases_by_modality": {
+    "gene_level_cnv": 179,
+    "rna_expression": 178,
+    "somatic_mutation": 179
+  },
+  "tcga_cases_with_all_three_modalities": 166,
+  "gse124229_assay_columns": 80,
+  "modality_file_counts": {
+    "ATAC-seq": 4,
+    "ATAC-seq count matrix": 1,
+    "CTCF ChIP-seq": 4,
+    "H3K27ac ChIP-seq": 4,
+    "H3K4me3 ChIP-seq": 4,
+    "Hi-C": 2,
+    "gene_level_cnv": 179,
+    "rna_expression": 183,
+    "somatic_mutation": 180
+  },
+  "schema_variants_by_modality": {
+    "ATAC-seq count matrix": 1,
+    "gene_level_cnv": 1,
+    "rna_expression": 1,
+    "somatic_mutation": 1
+  },
+  "qc_failures": 0,
+  "build_gates": {
+    "compatible": 542,
+    "requires_liftover": 19
+  },
+  "limitations": [
+    "MAF files can associate both tumour and matched-normal aliquots; downstream mutation aggregation must use Tumor_Sample_Barcode from each MAF record.",
+    "GSE149103 bigWig chromosome dictionaries and Hi-C archive members remain to be inspected.",
+    "hg19 GEO coordinates are blocked from feature extraction until liftover to GRCh38."
+  ]
+}

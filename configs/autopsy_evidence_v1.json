@@ -1,0 +1,22 @@
+{
+  "frozen_at_utc": "2026-11-04T15:47:12.096566+00:00",
+  "source_sha256": "c255634961a650ab081fce0311e9971ca474bfb3f93380587c087e8cc7d9ff79",
+  "predictions_sha256": "90e95ca9f5cd2d7b7c954677a689657b205de316f0dd22c8aa298b44f3040ad2",
+  "positive_rule": "At least one numeric LiFD >0 in published Table S3. Do not add thresholds or select by model outcome.",
+  "background": "Uniquely mapped genes appearing in Table S3, excluding all original 17 positives; background remains unlabelled, not proven negative. This is mutation-ascertained background, not complete exome coverage.",
+  "identity": "Use pinned approved/unique previous HGNC symbols; exact gene-universe mapping only.",
+  "models": [
+    "reference_nnpu",
+    "pu_decision_tree",
+    "pu_gradient_boosting",
+    "pu_lightgbm",
+    "mutation_prevalence_control"
+  ],
+  "metrics": "Observed-label AP, fractional tie-adjusted top100/500 recall and one-sided positive mean-rank enrichment",
+  "permutations": 2000,
+  "seed": 20261104,
+  "multiplicity": "Holm across four primary model rank-enrichment tests; control descriptive",
+  "secondary": "Report overlap with 80 MSK evidence genes, do not pool studies.",
+  "limits": "Johns Hopkins autopsy cohort; cross-study identity not verified. LiFD computational evidence combines existing databases/predictors, not experimental proof. Source never used in fitting; original unlabelled genes were present in training.",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13223546/supplementaryFiles"
+}

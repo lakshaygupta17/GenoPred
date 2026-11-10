@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-27T07:55:09.340201+00:00",
+  "stage": "Stage 4 complete",
+  "qc_status": "pass",
+  "source_release": "2024.09.20",
+  "gene_count": 19962,
+  "label_counts": {
+    "unlabelled": 19945,
+    "positive": 17
+  },
+  "positive_gene_symbols": [
+    "ACVR1B",
+    "ACVR2A",
+    "ARID1A",
+    "ATM",
+    "CDKN2A",
+    "FAT1",
+    "KDM6A",
+    "KMT2C",
+    "KMT2D",
+    "KRAS",
+    "LRP1B",
+    "RBM10",
+    "RNF43",
+    "SMAD4",
+    "SMARCA4",
+    "TGFBR2",
+    "TP53"
+  ],
+  "learning_regime": "positive-unlabelled",
+  "reliable_negative_decision": "No reliable negatives were manufactured. Absence from current catalogs remains unlabelled; future negatives require a separately reviewed evidence rule.",
+  "next_stage": "Stage 5: construct leakage-safe gene features and model-ready graph"
+}

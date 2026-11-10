@@ -1,0 +1,623 @@
+{
+  "configuration": {
+    "version": "stage6-pu-trees-v1",
+    "seeds": [
+      41,
+      137,
+      907
+    ],
+    "depths": [
+      2,
+      3
+    ],
+    "unlabelled_per_positive": [
+      5,
+      20
+    ],
+    "bags": 40,
+    "forest_trees_per_bag": 10,
+    "min_samples_leaf": 2,
+    "selection": "mean validation observed-label average precision across all seeds"
+  },
+  "sklearn_version": "1.7.2",
+  "numpy_version": "2.5.2",
+  "input_files": {
+    "edge_attr.npy": {
+      "bytes": 681496,
+      "sha256": "7c719a26810b99b3cf7968f638723f9a23ef6731f4dcf7dd1a5ee2ae069dfce7"
+    },
+    "edge_index.npy": {
+      "bytes": 2725600,
+      "sha256": "04b7a416ad8b08df465bee477f82f1e7576c9185575f7ae6ed4ac580fc275e26"
+    },
+    "feature_names.json": {
+      "bytes": 677,
+      "sha256": "d2de4cb736099609c8e5f6c4c3a5a2d103320099c4253e84d25358acda4f7245"
+    },
+    "gene_features.tsv.gz": {
+      "bytes": 1221613,
+      "sha256": "e7c7e4c597e216e3e9f631d0ca43effaa8261a14a0f1ce119dac4c114586a0dc"
+    },
+    "gene_ids.txt": {
+      "bytes": 339462,
+      "sha256": "461a5f5ff3fba5a33b11eb0d2e0a4715634f50166331855eea358163700c2716"
+    },
+    "string_physical_edges.tsv.gz": {
+      "bytes": 2423593,
+      "sha256": "9b5414c5ac79a1e4d21bca543bf182da28d6612f70bd07046b01f021d557f287"
+    },
+    "x.npy": {
+      "bytes": 1597088,
+      "sha256": "9c3d2f71439b0f86244a30440c20ea65746e5ace8544da9974d06f2cb8b0b625"
+    },
+    "y.npy": {
+      "bytes": 20090,
+      "sha256": "705e8566965977268e4971e8597c784b81aeb1dec0b81367865eb6bc7fdc069b"
+    }
+  },
+  "source_sha256": "aeeb28ca769cd3e9bc1146da87018fd8ae7d7727eb996890f5c716f26da104b9",
+  "config_sha256": "c752116e03b518b48136f0ef7bfe08f4804c8b17b24edf0f29aaf83ce59997b1",
+  "baseline_report_sha256": "08ac434a98ac1c143bbae45bb9db339c105e623238bf420b1e68e76ba4e70a27",
+  "validation_candidates": [
+    {
+      "family": "pu_tree",
+      "depth": 2,
+      "ratio": 5,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8774546670009192,
+          "observed_label_auprc": 0.3406978367062108,
+          "median_positive_percentile": 0.9752004008016032,
+          "auprc_lift_over_random": 453.35525471039784,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8807554107127936,
+          "observed_label_auprc": 0.34572854046538265,
+          "median_positive_percentile": 0.9859719438877755,
+          "auprc_lift_over_random": 460.0494445126025,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8604077880838975,
+          "observed_label_auprc": 0.3413746308304047,
+          "median_positive_percentile": 0.9779559118236473,
+          "auprc_lift_over_random": 454.2558420916585,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.34260033600066603
+    },
+    {
+      "family": "pu_tree",
+      "depth": 2,
+      "ratio": 20,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.765981448984708,
+          "observed_label_auprc": 0.33762423837574146,
+          "median_positive_percentile": 0.9589178356713427,
+          "auprc_lift_over_random": 449.26531986531995,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8649619787749644,
+          "observed_label_auprc": 0.3410661262004741,
+          "median_positive_percentile": 0.9769539078156313,
+          "auprc_lift_over_random": 453.84532526409754,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.7620539817832372,
+          "observed_label_auprc": 0.08671372478917146,
+          "median_positive_percentile": 0.9468937875751503,
+          "auprc_lift_over_random": 115.38706311945748,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.25513469645512904
+    },
+    {
+      "family": "pu_tree",
+      "depth": 3,
+      "ratio": 5,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.904403777053564,
+          "observed_label_auprc": 0.34063964709126,
+          "median_positive_percentile": 0.9741983967935872,
+          "auprc_lift_over_random": 453.27782372943665,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8633742792679869,
+          "observed_label_auprc": 0.3474563738538894,
+          "median_positive_percentile": 0.9879759519038076,
+          "auprc_lift_over_random": 462.34861480824213,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8718141555945517,
+          "observed_label_auprc": 0.3407476752168757,
+          "median_positive_percentile": 0.9757014028056112,
+          "auprc_lift_over_random": 453.42157315525594,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.34294789872067505
+    },
+    {
+      "family": "pu_tree",
+      "depth": 3,
+      "ratio": 20,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.7830701094677028,
+          "observed_label_auprc": 0.33593125217571296,
+          "median_positive_percentile": 0.9291082164328657,
+          "auprc_lift_over_random": 447.0125195618154,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.7800200551516671,
+          "observed_label_auprc": 0.3368200802900299,
+          "median_positive_percentile": 0.9486472945891784,
+          "auprc_lift_over_random": 448.1952535059331,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.7787666081724743,
+          "observed_label_auprc": 0.33591483666633964,
+          "median_positive_percentile": 0.9286072144288577,
+          "auprc_lift_over_random": 446.990675990676,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.3362220563773608
+    },
+    {
+      "family": "pu_random_forest",
+      "depth": 2,
+      "ratio": 5,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8676359989972425,
+          "observed_label_auprc": 0.026610684772621768,
+          "median_positive_percentile": 0.9165831663326653,
+          "auprc_lift_over_random": 35.409951204102036,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8864377036851341,
+          "observed_label_auprc": 0.03330498251100223,
+          "median_positive_percentile": 0.9178356713426854,
+          "auprc_lift_over_random": 44.31783006130697,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8224283446143561,
+          "observed_label_auprc": 0.017629897234075355,
+          "median_positive_percentile": 0.8469438877755511,
+          "auprc_lift_over_random": 23.45951658614294,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.3333333333333333
+        }
+      ],
+      "mean_validation_ap": 0.025848521505899783
+    },
+    {
+      "family": "pu_random_forest",
+      "depth": 2,
+      "ratio": 20,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8415643018300326,
+          "observed_label_auprc": 0.04392908456734281,
+          "median_positive_percentile": 0.8947895791583167,
+          "auprc_lift_over_random": 58.45496853094417,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8937912592963985,
+          "observed_label_auprc": 0.05304466696147143,
+          "median_positive_percentile": 0.9634268537074149,
+          "auprc_lift_over_random": 70.58477017006464,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8507562463441131,
+          "observed_label_auprc": 0.0702955894777486,
+          "median_positive_percentile": 0.9443887775551102,
+          "auprc_lift_over_random": 93.53999773172413,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.055756447002187605
+    },
+    {
+      "family": "pu_random_forest",
+      "depth": 3,
+      "ratio": 5,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8647112893791259,
+          "observed_label_auprc": 0.030916889225638077,
+          "median_positive_percentile": 0.9303607214428857,
+          "auprc_lift_over_random": 41.1400739295824,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8964652795186764,
+          "observed_label_auprc": 0.0514309881398489,
+          "median_positive_percentile": 0.9408817635270541,
+          "auprc_lift_over_random": 68.4375015514256,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8485836049135121,
+          "observed_label_auprc": 0.03547291422197225,
+          "median_positive_percentile": 0.8797595190380761,
+          "auprc_lift_over_random": 47.202624524704405,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.03927359719581974
+    },
+    {
+      "family": "pu_random_forest",
+      "depth": 3,
+      "ratio": 20,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8465780897468038,
+          "observed_label_auprc": 0.0335717899778075,
+          "median_positive_percentile": 0.93687374749499,
+          "auprc_lift_over_random": 44.67286186380251,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8558535973928304,
+          "observed_label_auprc": 0.05082923165114945,
+          "median_positive_percentile": 0.9341182364729459,
+          "auprc_lift_over_random": 67.63676425046287,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8485000417815659,
+          "observed_label_auprc": 0.08738666259637788,
+          "median_positive_percentile": 0.9516533066132264,
+          "auprc_lift_over_random": 116.28251902824684,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.05726256140844494
+    }
+  ],
+  "selected": {
+    "pu_tree": {
+      "family": "pu_tree",
+      "depth": 3,
+      "ratio": 5,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.904403777053564,
+          "observed_label_auprc": 0.34063964709126,
+          "median_positive_percentile": 0.9741983967935872,
+          "auprc_lift_over_random": 453.27782372943665,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8633742792679869,
+          "observed_label_auprc": 0.3474563738538894,
+          "median_positive_percentile": 0.9879759519038076,
+          "auprc_lift_over_random": 462.34861480824213,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8718141555945517,
+          "observed_label_auprc": 0.3407476752168757,
+          "median_positive_percentile": 0.9757014028056112,
+          "auprc_lift_over_random": 453.42157315525594,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.34294789872067505
+    },
+    "pu_random_forest": {
+      "family": "pu_random_forest",
+      "depth": 3,
+      "ratio": 20,
+      "validation": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8465780897468038,
+          "observed_label_auprc": 0.0335717899778075,
+          "median_positive_percentile": 0.93687374749499,
+          "auprc_lift_over_random": 44.67286186380251,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8558535973928304,
+          "observed_label_auprc": 0.05082923165114945,
+          "median_positive_percentile": 0.9341182364729459,
+          "auprc_lift_over_random": 67.63676425046287,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8485000417815659,
+          "observed_label_auprc": 0.08738666259637788,
+          "median_positive_percentile": 0.9516533066132264,
+          "auprc_lift_over_random": 116.28251902824684,
+          "known_positive_recall_at_100": 0.3333333333333333,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_validation_ap": 0.05726256140844494
+    }
+  },
+  "results": {
+    "pu_tree": {
+      "test": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.8607838221776553,
+        "observed_label_auprc": 0.41726726726726726,
+        "median_positive_percentile": 0.9982464929859719,
+        "auprc_lift_over_random": 555.2436436436436,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      },
+      "per_seed_test": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8698504219938163,
+          "observed_label_auprc": 0.36060642813826566,
+          "median_positive_percentile": 0.9939879759519038,
+          "auprc_lift_over_random": 479.8469537093188,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8762012200217265,
+          "observed_label_auprc": 0.5562007168458781,
+          "median_positive_percentile": 0.999498997995992,
+          "auprc_lift_over_random": 740.1177538829152,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.7227375282025571,
+          "observed_label_auprc": 0.4669171676686707,
+          "median_positive_percentile": 0.998997995991984,
+          "auprc_lift_over_random": 621.3111111111111,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_gene_score_std_across_seeds": 0.015037199961583207
+    },
+    "pu_random_forest": {
+      "test": {
+        "known_positives": 3,
+        "unlabelled_comparators": 3989,
+        "observed_positive_prevalence": 0.000751503006012024,
+        "observed_label_auroc": 0.9084148073869809,
+        "observed_label_auprc": 0.37869858809085327,
+        "median_positive_percentile": 0.9964929859719439,
+        "auprc_lift_over_random": 503.92158788622874,
+        "known_positive_recall_at_100": 0.6666666666666666,
+        "known_positive_recall_at_500": 0.6666666666666666
+      },
+      "per_seed_test": [
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.8953789588033759,
+          "observed_label_auprc": 0.37117747287238817,
+          "median_positive_percentile": 0.9957414829659319,
+          "auprc_lift_over_random": 493.91349056885787,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.917439625637169,
+          "observed_label_auprc": 0.3949577238782942,
+          "median_positive_percentile": 0.9974949899799599,
+          "auprc_lift_over_random": 525.5570779073835,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        },
+        {
+          "known_positives": 3,
+          "unlabelled_comparators": 3989,
+          "observed_positive_prevalence": 0.000751503006012024,
+          "observed_label_auroc": 0.9141806634912676,
+          "observed_label_auprc": 0.3787610619469026,
+          "median_positive_percentile": 0.9964929859719439,
+          "auprc_lift_over_random": 504.0047197640118,
+          "known_positive_recall_at_100": 0.6666666666666666,
+          "known_positive_recall_at_500": 0.6666666666666666
+        }
+      ],
+      "mean_gene_score_std_across_seeds": 0.007891064474552158
+    }
+  },
+  "baseline_test_metrics": {
+    "feature_only_nnpu": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9653213002423331,
+      "observed_label_auprc": 0.22464940668824163,
+      "median_positive_percentile": 0.99874749498998,
+      "auprc_lift_over_random": 298.93347716648685,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    },
+    "graph_random_walk": {
+      "known_positives": 3,
+      "unlabelled_comparators": 3989,
+      "observed_positive_prevalence": 0.000751503006012024,
+      "observed_label_auroc": 0.9658226790340102,
+      "observed_label_auprc": 0.08844256518675124,
+      "median_positive_percentile": 0.9947394789579158,
+      "auprc_lift_over_random": 117.68757340850365,
+      "known_positive_recall_at_100": 0.6666666666666666,
+      "known_positive_recall_at_500": 1.0
+    }
+  },
+  "roundtrip_max_error": {
+    "pu_tree": 0.0,
+    "pu_random_forest": 0.0
+  },
+  "evaluation_status": "Exploratory comparison on previously examined test split; 3 positives",
+  "score_meaning": "Uncalibrated PU bagging ranking score; sampled unlabelled examples are temporary comparators",
+  "output_files": {
+    "gene_scores.tsv.gz": {
+      "sha256": "d1594f9447284538b68b66716d96c2355ed073c812ae0d2366201a7412854a27",
+      "bytes": 337775
+    },
+    "pu_random_forest.joblib": {
+      "sha256": "fc1392bf14bb056112542fa9dfdb6a1ee981c51f9d434e62bb4080f56baf2750",
+      "bytes": 1518294
+    },
+    "pu_tree.joblib": {
+      "sha256": "94bb09563e414de633868ff6c2aba9c09df7106fa0c52e7c2a55c4acffc56388",
+      "bytes": 141229
+    },
+    "selection.json": {
+      "sha256": "ff265545d05a6ce6ba1fb4de967c77d2a3b6ca5adf417060e793d610a89d4e09",
+      "bytes": 3303
+    }
+  }
+}

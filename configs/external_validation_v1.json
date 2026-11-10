@@ -1,0 +1,61 @@
+{
+  "version": "external-functional-validation-v1",
+  "frozen_at_utc": "2026-11-04T14:20:04.806787+00:00",
+  "shortlist": [
+    "reference_nnpu",
+    "pu_decision_tree",
+    "pu_gradient_boosting",
+    "pu_lightgbm"
+  ],
+  "shortlist_rationale": "Original nnPU and three promising local tree families; local-test-informed shortlist, external outcomes unseen",
+  "control": "Existing mutation-prevalence ranking",
+  "sources": {
+    "26011": {
+      "group_id": 1,
+      "size": 953924,
+      "timestamp": "2026-10-13T09:49:09.014296+00:00",
+      "url": "https://cog.sanger.ac.uk/cmp/download/model_list_20261013.csv"
+    },
+    "11717": {
+      "group_id": 2,
+      "size": 3873087,
+      "timestamp": "2024-12-12T09:13:57.299348+00:00",
+      "url": "https://cog.sanger.ac.uk/cmp/download/gene_identifiers_20241212.csv"
+    },
+    "21929": {
+      "group_id": 29,
+      "size": 198873260,
+      "timestamp": "2025-06-24T14:51:51.150675+00:00",
+      "url": "https://cog.sanger.ac.uk/cmp/download/Project_Score2_fitness_scores_Sanger_v2_Broad_21Q2_20250624.zip"
+    },
+    "21928": {
+      "group_id": 41,
+      "size": 1181795,
+      "timestamp": "2025-06-24T09:14:03.963917+00:00",
+      "url": "https://cog.sanger.ac.uk/cmp/download/CRISPR_KO_supplemental_information_20250624.csv"
+    }
+  },
+  "source_switch": "Broad Figshare API, page and direct downloads returned HTTP 403; use official Sanger public Project Score archive instead",
+  "license": "Sanger research/education use; https://www.sanger.ac.uk/tool/project-score-database/",
+  "prediction_source_sha256": "f77adb8aad65819187da680401aaff5f36fea2942a2a51725758893995f21afd",
+  "frozen_predictions_sha256": "90e95ca9f5cd2d7b7c954677a689657b205de316f0dd22c8aa298b44f3040ad2",
+  "gene_scope": "Unique unversioned Ensembl matches; only previously unlabelled genes in primary analysis",
+  "model_scope": "Pancreatic adenocarcinoma models with screened data; exclude PANC1/HPNE and their known donor-matched models; collapse models from same donor",
+  "common_essential_policy": "Exclude genes annotated common essential or pan-cancer core fitness by the source in primary analysis; include in secondary sensitivity",
+  "coverage_fraction": 0.8,
+  "minimum_pancreatic_donors": 5,
+  "minimum_other_donors": 20,
+  "primary_endpoint": "Spearman correlation of frozen model score with negative median pancreatic fitness, among eligible unlabelled non-common-essential genes",
+  "direction": "Higher model scores should correlate with stronger depletion (more negative source fitness)",
+  "multiplicity": "Holm adjustment across four primary one-sided rank-correlation permutation p-values",
+  "permutations": 2000,
+  "bootstrap_donors": 200,
+  "seed": 20261104,
+  "secondary_endpoints": [
+    "Top 100 and top 500 median fitness and random-gene-set enrichment",
+    "Correlation with pancreatic selectivity: median other-lineage fitness minus median pancreatic fitness",
+    "All measured genes and known-positive controls as explicitly secondary analyses"
+  ],
+  "inference_limit": "Orthogonal functional evidence, not a test of all cancer driver mechanisms or clinical prediction; no external-data tuning or retraining",
+  "status": "Frozen before measurement inspection; exact file schema and metadata cohort to be audited before evaluation"
+}

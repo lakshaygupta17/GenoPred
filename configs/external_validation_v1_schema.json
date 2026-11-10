@@ -1,0 +1,15 @@
+{
+  "protocol_sha256": "8fe412aea8ba2507622f7e0c79bb6a3c4ae0141a321b3ad810ccc4740d0b2c95",
+  "status": "Schema resolution before outcome comparison; first two gene rows seen only to check parsing",
+  "measurement": "Project Score combined Sanger v2/Broad 21Q2 corrected fold_change_values; negative indicates depletion. Use negative median fold change for the primary endpoint. No Bayes-factor sign assumptions.",
+  "headers": "Five metadata rows: names, model IDs, source, QC, gene-field labels; three gene identifier columns",
+  "screen_selection": "QC TRUE only; prefer Sanger over Broad when duplicate model IDs; first column if same-source duplicate; median within known patient_id. Exclude missing patient IDs.",
+  "adenocarcinoma_details": ["Pancreatic Ductal Adenocarcinoma", "Pancreatic Adenocarcinoma"],
+  "cohort": "Pancreas tissue with exact adenocarcinoma details; other pancreas histologies excluded. Other-lineage comparator excludes all pancreas and missing tissue; no donor overlap.",
+  "training_overlap": "Exclude PANC1 and HPNE names/synonyms and all known matching patient IDs",
+  "gene_matching": "Unique unversioned Ensembl IDs directly in matrix, matched to frozen predictions. Supplemental common-essential/core-fitness flags must be available for primary eligibility.",
+  "coverage": "Primary requires 80 percent pancreatic donor coverage; selectivity additionally requires 80 percent comparator coverage.",
+  "top_k": "Include all ties at the kth score among primary-eligible genes; report actual count. Null samples use that actual count without replacement. Secondary p-values exploratory, unadjusted.",
+  "inference": "Gene permutation assumes exchangeable genes and does not control gene length, expression or network confounding. Donor bootstrap measures cell-model stability, not patient confidence. No clinically validated performance claim.",
+  "method_source": "https://depmap.sanger.ac.uk/documentation/datasets/wg-crispr-knockout/"
+}

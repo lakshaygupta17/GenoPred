@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genopred-v2"
+version = "0.1.0"
+description = "A provenance-aware pancreatic cancer driver-gene research pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["certifi>=2025.8.3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+data = ["numpy>=1.26", "pandas>=2.2", "pyarrow>=16"]
+genomics = ["pyliftover>=0.4.1", "pybigtools>=0.3.0"]
+model = ["torch>=2.4", "torch-geometric>=2.6", "scikit-learn>=1.5"]
+benchmark = ["scikit-learn==1.7.2", "xgboost==3.4.1", "lightgbm==4.7.0", "catboost==1.2.10", "threadpoolctl>=3.1", "matplotlib>=3.8"]
+
+[project.scripts]
+genopred-v2 = "genopred_v2.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100

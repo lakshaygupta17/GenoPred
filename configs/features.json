@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "features": [
+    {
+      "name": "panc1_vs_hpne_atac",
+      "modality": "ATAC-seq",
+      "source_ids": ["GSE149103"],
+      "transformation": "replicate-median log1p PANC-1 minus log1p HPNE exact mean signal over GRCh38 TSS +/- 2 kb windows reverse-lifted to hg19",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "patient_atac_mean",
+      "modality": "ATAC-seq",
+      "source_ids": ["GSE124229"],
+      "transformation": "10% trimmed mean across 40 within-patient median log1p CPM profiles derived from 80 libraries",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "patient_atac_variability",
+      "modality": "ATAC-seq",
+      "source_ids": ["GSE124229"],
+      "transformation": "median absolute deviation across 40 within-patient median log1p CPM profiles",
+      "missing_value_policy": "missing flag plus cohort median placeholder; refit imputation inside training partition",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "panc1_vs_hpne_ctcf",
+      "modality": "CTCF ChIP-seq",
+      "source_ids": ["GSE149103"],
+      "transformation": "replicate-median PANC-1 minus HPNE exact mean signed signal over reverse-lifted TSS +/- 2 kb windows",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "panc1_vs_hpne_h3k4me3",
+      "modality": "H3K4me3 ChIP-seq",
+      "source_ids": ["GSE149103"],
+      "transformation": "replicate-median PANC-1 minus HPNE exact mean signed signal over reverse-lifted TSS +/- 2 kb windows",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "panc1_vs_hpne_h3k27ac",
+      "modality": "H3K27ac ChIP-seq",
+      "source_ids": ["GSE149103"],
+      "transformation": "replicate-median PANC-1 minus HPNE exact mean signed signal over reverse-lifted TSS +/- 2 kb windows",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "paad_damaging_snv_prevalence",
+      "modality": "somatic mutation",
+      "source_ids": ["TCGA-PAAD"],
+      "transformation": "unique canonical-cohort cases with a selected damaging MAF consequence divided by 165 available mutation cases",
+      "missing_value_policy": "retain denominator and missing flag",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "paad_amplification_prevalence",
+      "modality": "copy number",
+      "source_ids": ["TCGA-PAAD"],
+      "transformation": "autosomes only: fraction of observed cases with copy number >= twice that case's autosomal protein-coding modal baseline; sex chromosomes missing",
+      "missing_value_policy": "retain denominator and missing flag",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "paad_deletion_prevalence",
+      "modality": "copy number",
+      "source_ids": ["TCGA-PAAD"],
+      "transformation": "autosomes only: fraction of observed cases with copy number below that case's autosomal protein-coding modal baseline, including zero; sex chromosomes missing",
+      "missing_value_policy": "retain denominator and missing flag",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "hic_promoter_local",
+      "modality": "Hi-C",
+      "source_ids": ["GSE149103", "GSE185069"],
+      "transformation": "distance-normalized local promoter contact strength",
+      "missing_value_policy": "missing flag plus chromosome-stratified imputation",
+      "status": "deferred_hic_reader_and_external_source"
+    },
+    {
+      "name": "hic_promoter_distal",
+      "modality": "Hi-C",
+      "source_ids": ["GSE149103", "GSE185069"],
+      "transformation": "distance-normalized distal promoter contact strength",
+      "missing_value_policy": "missing flag plus chromosome-stratified imputation",
+      "status": "deferred_hic_reader_and_external_source"
+    },
+    {
+      "name": "paad_expression_tumor",
+      "modality": "RNA-seq",
+      "source_ids": ["TCGA-PAAD", "CPTAC-PDAC"],
+      "transformation": "median across the 165-case canonical cohort of log2(TPM+1); across-gene scaling deferred to split-aware model preprocessing",
+      "missing_value_policy": "missing flag plus cohort median imputation",
+      "status": "implemented_stage5"
+    },
+    {
+      "name": "pancreas_crispr_dependency",
+      "modality": "CRISPR gene effect",
+      "source_ids": ["DEPMAP-PANCREAS"],
+      "transformation": "robust aggregate across pancreatic lineage models",
+      "missing_value_policy": "do not impute; exclude from models requiring a complete matrix",
+      "status": "validation_only"
+    }
+  ]
+}
